@@ -19,7 +19,7 @@ FROM library/golang
 #
 #EXPOSE 9000
 
-WORKDIR /go/src/app
+WORKDIR $GOPATH/src/usercenter
 COPY . .
 
 RUN go get -d -v ./...
